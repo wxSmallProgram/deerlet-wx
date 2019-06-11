@@ -1,0 +1,48 @@
+<!--pages/ucenter/index/index.wxml-->
+<view class='user_center'>
+  <view class="profile-info">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view class="info">
+      <text class="name">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+
+  <view class='user_area'>
+    <view class='user_row'>
+      <view class='user_row_left'>我的活动</view>
+      <image class='user_row_right' src='/images/me_myactivity_goright.png'></image>
+    </view>
+
+    <view class='user_column'>
+      <view class='user_column_item'>
+        <image class='user_column_item_image' src='/images/ucenter_activity_join.png'></image>
+        <view class='user_column_item_text'>我的参与</view>
+      </view>
+      <view class='user_column_item'>
+        <image class='user_column_item_image' src='/images/ucenter_activity_sponsor.png'></image>
+        <view class='user_column_item_text'>我的发起</view>
+      </view>
+      <view class='user_column_item'>
+        <image class='user_column_item_image' src='/images/ucenter_activity_claim.png'></image>
+        <view class='user_column_item_text'>我的认领</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='separate'></view>
+
+  <view class='user_row'>
+    <view class='user_row_left'>常用功能</view>
+  </view>
+
+  <view class='user_column'>
+    <view class='user_column_item'>
+      <image class='user_column_item_image' src='/images/ucenter_activity_message.png'></image>
+      <view class='user_column_item_text'>消息通知</view>
+    </view>
+    <view class='user_column_item'>
+      <image class='user_column_item_image' src='/images/ucenter_activity_aboutus.png'></image>
+      <view class='user_column_item_text'>关于我们</view>
+    </view>
+  </view>
+</view>

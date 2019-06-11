@@ -1,0 +1,175 @@
+<!--pages/home/actinfo/actinfo.wxml-->
+
+<view class="lineBase"></view>
+
+<view class='actDetail'>
+  <image class='actMainPic' src='https://deerlife-1254209752.cos.ap-guangzhou.myqcloud.com/activity_index_poster.png'></image>
+  <view class='actBaseInfoBackground'>
+    <view class='actTitleInfo'>
+      <text class='actTitle'>这里是活动标题这里是活动标题这里是活动标题这里是活动标题这里是活动标题这里是活动标题这里是活动标题这里是活动标题</text>
+      <view class='actOtherInfo'>
+        <view class='parent'>
+          <view class='parentLeft'>
+            <image class='viewPic' src='/images/home_actinfo_viewicon.png '></image>
+            <text class='viewNum'>300</text>
+
+            <image class='sharePic' src='/images/home_actinfo_share.png '></image>
+            <text class='shareNum'>200</text>
+          </view>
+
+          <view class='parentRight'>
+            <image class='transGuranteePic' src='/images/home_actinfo_guranteeicon.png'></image>
+            <text class='transGuranteeText'>交易保障</text>
+
+            <image class='actRefundPic' src='/images/home_actinfo_refundicon.png'></image>
+            <text class='canRefundText' wx:if='1'>支持退款</text>
+            <text class='canRefundText' wx:else>不支持退款</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='actParameter'>
+      <view class='actTime'>
+        <image class='actTimeImage' src='/images/home_actinfo_time.png'></image>
+        <text class='actTimeText'>19.04.29 10:30 至 19.04.29 15:30</text>
+      </view>
+
+      <view class='actAddress'>
+        <image class='actAddressImage' src='/images/home_actinfo_address.png'></image>
+        <text class='actAddressText'>橘子洲地铁站(3.0km)</text>
+      </view>
+
+      <view class='actEnlist'>
+        <image class='actEnlistImage' src='/images/home_actinfo_enlist.png'></image>
+        <text class='actEnlistText'>已报名：8人/12人</text>
+      </view>
+
+      <view class='actFeeAndState'>
+        <image class='actFeeImage' src='/images/home_actinfo_fee.png'></image>
+        <text class='actFeeText'>￥50</text>
+        <text class='actState'>报名中</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 活动详情 -->
+  <view style="height:20rpx"></view>
+  <view class='actDetail'>
+
+  </view>
+
+  <!-- 报名条件 -->
+  <view style="height:20rpx"></view>
+  <view class='actDiv'>
+    <text class='title'>报名条件</text>
+    <view class='seperate'></view>
+
+    <view class='line'>
+      <view class='left'>
+        <text class='key'>报名截止：</text>
+        <text class='value'>活动前24小时</text>
+      </view>
+    </view>
+
+    <view class='line'>
+      <view class='left' wx:if='1'>
+        <text class='key'>退款设置：</text>
+        <text class='value'>开始前24小时可退款</text>
+      </view>
+    </view>
+
+    <view class='line'>
+      <view class='left'>
+        <text class='key'>成行人数：</text>
+        <text class='value'>10人</text>
+      </view>
+
+      <view class='right'>
+        <text class='key'>人员构成：</text>
+        <text class='value'>6男6女0未知</text>
+      </view>
+    </view>
+
+    <view class='line'>
+      <view class='left'>
+        <text class='key'>年龄要求：</text>
+        <text class='value'>22-40岁</text>
+      </view>
+
+      <view class='right'>
+        <text class='key'>最低学历：</text>
+        <text class='value'>大专</text>
+      </view>
+    </view>
+
+    <view style='height:1rpx;'></view>
+  </view>
+
+  <!-- 组织者 -->
+  <view style="height:20rpx"></view>
+  <view class='actDiv'>
+    <text class='title'>活动组织者</text>
+    <view class='seperate'></view>
+
+    <view class="actOrganizor">
+      <image class="avatar" src="/images/default_avatar.png"></image>
+      <view class="info">
+        <text class="name">小鹿Life</text>
+        <text class='actNum'>10 活动</text>
+      </view>
+    </view>
+
+    <view style='height:10rpx;'></view>
+  </view>
+
+  <!-- 已报名 -->
+  <view style="height:20rpx"></view>
+  <view class='actDiv'>
+    <text class='title'>已报名(20人)</text>
+    <view class='seperate'></view>
+
+    <view class='attendeeInfo' wx:for='{{attandeeNum}}'>
+      <view class='onePerson'>
+        <image class='attendeeImage' src='/images/default_avatar.png'></image>
+        <text class='attendeeText'>报名人</text>
+      </view>
+
+      <view style='height:20rpx;'></view>
+    </view>
+  </view>
+
+  <!-- 活动二维码 -->
+  <block wx:if='1'>
+    <view style="height:20rpx"></view>
+  </block>
+ 
+  <view class='actDiv'wx:if='1'>
+    <text class='title'>活动二维码(请及时扫码)</text>
+    <view class='seperate'></view>
+
+    <image class='actQRCode' src='/images/person_code.png'></image>
+    <view style='height:1rpx;'></view>
+  </view>
+
+  <!-- 底部tab栏 -->
+  <view style="height:100rpx"></view>
+  <view class='actJoinBar'>
+    <view class='actJoinBarCommon'>
+      <image class='actJoinBarImage' src='/images/home_actinfo_tabbar_home.png'></image>
+      <text class='acgJoinBarText'>首页</text>
+    </view>
+
+    <view style="width:3rpx;height:55rpx;margin-top:25rpx;background:#f2f2f2"></view>
+
+    <view class='actJoinBarCommon'>
+      <image class='actJoinBarImage' src='/images/home_actinfo_tabbar_share.png'></image>
+      <text class='acgJoinBarText'>分享</text>
+    </view>
+
+    <view class='actJoinBarJoin'>
+      <text class='actJoinBarJoinText'>我要报名</text>
+    </view>
+  </view>
+</view>
+

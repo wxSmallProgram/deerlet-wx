@@ -1,0 +1,47 @@
+/* pages/ucenter/actlist/actlist.wxss */
+
+/* 顶部tab栏 */
+.type-view {
+  white-space: nowrap;
+  width: 100%;
+  height: 84rpx;
+  background: #ffffff;
+}
+
+.type-view-item{
+  display: inline-block;
+  width: 120rpx;
+  padding: 0 20rpx;
+  text-align: center;
+}
+
+.type-view-item .txt{
+  line-height: 82rpx;
+  font-size: 30rpx;
+  color: #9a9ba1;
+}
+
+.selected .txt {
+  color: #ab956d;
+  border-bottom: 4rpx solid #ab956d;
+}
+
+.no-data {
+  width: 100%;
+  height: auto;
+  margin-top: 200rpx;
+}
+
+.no-data .no-data-image {
+  margin: 0 auto;
+  display: block;
+  width: 258rpx;
+  height: 258rpx;
+}
+
+.no-data .no-data-text {
+  display: block;
+  text-align: center;
+  font-size: 26rpx;
+  color: #999999;
+}

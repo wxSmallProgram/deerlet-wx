@@ -1,0 +1,78 @@
+<!--pages/home/index/index.wxml-->
+
+<view class='home-view'>
+
+  <!--显示顶部tab栏-->
+  <scroll-view class='type-view' scroll-x='true'>
+    <view class='type-view-item {{currentTab == 0? "selected" : ""}}' data-current='0' bindtap='viewSwitch'>
+      <view class='txt'>全部活动</view>
+    </view>
+    <view class='type-view-item {{currentTab == 1? "selected" : ""}}' data-current='1' bindtap='viewSwitch'>
+      <view class='txt'>线上活动</view>
+    </view>
+    <view class='type-view-item {{currentTab == 2? "selected" : ""}}' data-current='2' bindtap='viewSwitch'>
+      <view class='txt'>线下活动</view>
+    </view>
+    <view class='type-view-item {{currentTab == 3? "selected" : ""}}' data-current='3' bindtap='viewSwitch'>
+      <view class='txt'>单身交友</view>
+    </view>
+    <view class='type-view-item {{currentTab == 4? "selected" : ""}}' data-current='4' bindtap='viewSwitch'>
+      <view class='txt'>活动认领</view>
+    </view>
+    <view class='type-view-item {{currentTab == 5? "selected" : ""}}' data-current='5' bindtap='viewSwitch'>
+      <view class='txt'>桌游</view>
+    </view>
+    <view class='type-view-item {{currentTab == 6? "selected" : ""}}' data-current='6' bindtap='viewSwitch'>
+      <view class='txt'>羽毛球</view>
+    </view>
+  </scroll-view>
+
+  <view style="height:10rpx"></view>
+
+  <!--活动为空时-->
+  <block wx:if='{{activityNum == 0}}'>
+    <view class='no-data'>
+      <image class='no-data-image' src='/images/home_index_nodata.png'></image>
+      <text class='no-data-text'>还没有任何数据呢</text>
+    </view>
+  </block>
+
+  <!--活动列表-->
+  <block wx:for='{{activityNum}}'>
+    <view class='actList'>
+      <view class='actListTop'>
+        <image class='actListImage' src='https://deerlife-1254209752.cos.ap-guangzhou.myqcloud.com/activity_index_poster.png'></image>
+        <view class='actListRight'>
+          <view class='actListTitle'>
+            <!--活动特殊标签
+            <image class='actLabel' wx:if='1' src=''>官</image>
+            <image class='actLabel' wx:if='1' src=''>单</image>
+            -->
+            <text class='actTitle'>小鹿心动 | 周末存在咖啡戏精剧本杀，大家快快报名，机不可失时不再来</text>
+          </view>
+          <view class='actListNumberAndDate'>
+            <text class='actNumber'>12人聚</text>
+            <text class='actDate'>6.10 周三</text>
+          </view>
+          <view class='actListAddressAndFee'>
+            <text class='actAddress'>存在咖啡商学院店</text>
+            <text class='actAddressDistanc'>(5.0km)</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='actListBottom'>
+        <text class='actFee'>￥50</text>
+        <view class='actApplyState'>
+          <!--N人已报名/马上抢票/活动认领中-->
+          <text class='actApply'>12人已报名</text>
+          <!--高亮Sate(立即报名)/(立即认领)/(报名截止倒计时)-->
+          <!--灰色Sate(报名已结束)/(报名已满)-->
+          <text class='actState'>(03时25分39秒)</text>
+        </view>
+      </view>
+    </view>
+    <view style="height:10rpx"></view>
+  </block>
+
+</view>

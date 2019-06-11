@@ -1,0 +1,168 @@
+/* pages/activity/index/index.wxss */
+
+.separate {
+  background: #e0e3da;
+  width: 100%;
+  height: 6rpx;
+}
+
+.user_row {
+  height: 86rpx;
+  border-bottom: 1px solid #fafafa;
+}
+
+.user_row_left {
+  float: left;
+  color: #666666;
+  font-weight: 550;
+  line-height: 86rpx;
+  margin-left: 30rpx;
+  font-size: 26rpx;
+  letter-spacing: 1rpx;
+}
+
+/* 添加海报 */
+.pPoster {
+    width: 100%;
+    height: 56.25vw;
+    border-bottom: 1px solid #e7ecf2;
+}
+
+.pPoster-image {
+    width: 100%;
+    height: 56.25vw;
+}
+
+/* 基本信息 */
+.baseInfo {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.contentList {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.pTitle {
+    display: flex;
+    height: 100rpx;
+    width: 100%;
+    border-bottom: 1px solid #e7ecf2;
+}
+
+.pTitleLabel {
+    line-height: 100rpx;
+    color: #666666;
+    font-size: 26rpx;
+    width: 100rpx;
+}
+
+.pTitleInput {
+  height: 100rpx;
+  font-size: 26rpx;
+}
+
+.pDateItem {
+    min-width: 250rpx;
+}
+
+.pickDateItemNull {
+    line-height: 100rpx;
+    color: #c2cdd9;
+    font-size: 26rpx;
+}
+
+.noBorderBottom {
+  border-bottom: none;
+}
+
+.pAreaContent {
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  font-size: 26rpx;
+  padding-right: 10rpx;
+}
+
+.pArrowRight {
+  width: 23rpx;
+  height: 26rpx;
+  align-self: center;
+}
+
+/* 解决input组件问题 */
+.fixInput {
+  /*width: 600rpx;*/
+  min-width: 85%;
+}
+
+/* 活动详情描述 */
+.actBrief {
+  width: 100%;
+  height:360rpx;
+  background-color: #fff; 
+}
+
+/* 选填信息 */
+.pTitleLabel2 {
+    line-height: 100rpx;
+    color: #666666;
+    font-size: 26rpx;
+    width: 260rpx;
+}
+
+/* 同意协议及活动发布 */
+.pAccord {
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.pAccord image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.pAccord .iAgree {
+  color: #98a4b4;
+}
+
+.pAccord .aName {
+  color: #ab956d;
+}
+
+.pButton {
+  display: flex;
+}
+
+.postBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  margin-bottom: 12rpx;
+  margin-right: 24rpx;
+  margin-left: 24rpx;
+  margin-top: 12rpx;
+  font-size: 30rpx;
+  border: none;
+  background-color: #ab956d;
+  color: #fff;
+  border-radius: 10rpx;
+}
+
+.postBtn:active {
+    background-color: #e7ecf2;
+}

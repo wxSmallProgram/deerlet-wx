@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index/index",
+    "pages/home/actinfo/actinfo",
+    "pages/activity/index/index",
+    "pages/ucenter/index/index",
+    "pages/ucenter/actlist/actlist"
+  ],
+
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "小鹿生活",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "selectedColor": "#AB956D",
+    "color": "#666666",
+    "list": [{
+      "pagePath": "pages/home/index/index",
+      "text": "首页",
+      "iconPath": "/images/tabbar_home_default.png",
+      "selectedIconPath": "/images/tabbar_home_selected.png"
+    },
+    {
+      "pagePath": "pages/activity/index/index",
+      "text": "发布活动",
+      "iconPath": "/images/tabbar_activity_default.png",
+      "selectedIconPath": "/images/tabbar_activity_selected.png"
+    },
+    {
+      "pagePath": "pages/ucenter/index/index",
+      "text": "我的",
+      "iconPath": "/images/tabbar_me_default.png",
+      "selectedIconPath": "/images/tabbar_me_selected.png"
+    }]
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

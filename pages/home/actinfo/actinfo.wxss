@@ -1,0 +1,335 @@
+/* pages/home/actinfo/actinfo.wxss */
+
+.actDetail {
+  width: 100%;
+}
+
+.actMainPic {
+  width: 100%;
+  height: 56.25vw;
+  vertical-align: bottom;
+}
+
+.actBaseInfoBackground {
+  height: 400rpx;
+  widows: 100%;
+  background-color: #ffffff;
+}
+
+/* 标题部分 */
+.actTitleInfo {
+  background-image: url(https://deerlife-1254209752.cos.ap-guangzhou.myqcloud.com/home_actinfo_background.png);
+  background-size: 96% 96%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  margin-top: -30rpx;
+  position: relative;
+  padding-top: 30rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  padding-bottom: 20rpx;
+}
+
+.actTitle {
+  font-size: 36rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 活动统计及保障 */
+.actOtherInfo {
+  margin-top: 10rpx;
+  color: #c2cdd9;
+  font-size: 24rpx;
+}
+
+.parent {
+  display: flex;
+}
+
+.parent .parentLeft {
+  flex: 1;
+}
+
+.viewPic {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.viewNum {
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.sharePic {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.shareNum {
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.transGuranteePic {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.transGuranteeText {
+  color: #ab956d;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.actRefundPic {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.canRefundText {
+  vertical-align: middle;
+  color: #ab956d; 
+}
+
+/* 活动基本信息 */
+.actParameter {
+  font-size: 26rpx;
+  color: #666666;
+}
+
+.actTime {
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+
+.actTimeImage {
+  width: 26rpx;
+  height: 26rpx;
+  vertical-align: middle;
+}
+
+.actTimeText {
+  margin-left: 10rpx;
+  line-height: 30rpx;
+}
+
+.actAddress {
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+
+.actAddressImage {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.actAddressText {
+  margin-left: 10rpx;
+  line-height: 30rpx;
+}
+
+.actEnlist {
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+
+.actEnlistImage {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.actEnlistText {
+  margin-left: 10rpx;
+  line-height: 30rpx;
+}
+
+.actFeeAndState {
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+
+.actFeeImage {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.actFeeText {
+  flex: 1;
+  margin-left: 10rpx;
+  line-height: 30rpx;
+  color: #ab956d;
+}
+
+.actState {
+  margin-right: 50rpx;
+  margin-left: 10rpx;
+  line-height: 30rpx;
+  color: #ab956d;
+  font-weight: bold;
+}
+
+/* 活动详情 */
+.actDetail {
+  width: 100%;
+  height: 400rpx;
+  background-color: #ffffff;
+}
+
+/* 报名条件 */
+.actDiv {
+  width: 100%;
+  min-height: 100rpx;
+  background-color: #ffffff;
+}
+
+.actDiv .title {
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  line-height: 70rpx;
+  color: #666666;
+}
+
+.actDiv .line {
+  display: flex;
+  font-size: 24rpx;
+  color: #666666;
+  margin: 20rpx 20rpx;
+}
+
+.actDiv .line .left {
+  width: calc((100% - 40rpx) / 2);
+}
+
+.actDiv .seperate {
+  margin: 0rpx 20rpx 10rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+/* 组织者 */
+.actOrganizor {
+  display: flex;
+}
+
+.actOrganizor .avatar {
+  height: 148rpx;
+  width: 148rpx;
+  border-radius: 50%;
+  margin: 10rpx 20rpx;
+}
+
+.actOrganizor .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+
+.actOrganizor .info .name {
+  font-size: 30rpx;
+}
+
+.actOrganizor .info .actNum {
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #666666;
+}
+
+/* 已报名 */
+.attendeeInfo {
+  display: inline-block;
+}
+
+.onePerson {
+  display: flex;
+  flex-direction: column;
+}
+
+.onePerson .attendeeImage {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  margin: 10rpx 20rpx;
+}
+ 
+.onePerson .attendeeText {
+  font-size: 22rpx;
+  color: #666666;
+  width: 120rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 活动二维码 */
+.actQRCode {
+  width: 400rpx;
+  height: 400rpx; 
+  display: block;
+  margin: 10rpx auto;
+}
+
+/* 底部tab栏 */
+.actJoinBar {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 101;
+  border-top: 1px solid #d9e1ea;
+  box-shadow: 0px 2px 5px 2px #d9e1ea;
+  display: flex;
+  flex-direction: row;
+}
+
+.actJoinBarCommon {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actJoinBarImage {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 5rpx 0rpx;
+}
+
+.acgJoinBarText {
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.actJoinBarJoin {
+  width: 50%;
+  background-color: #ab956d;
+  text-align: center;
+}
+
+.actJoinBarJoin:active {
+    background-color: #e7ecf2;
+}
+
+.actJoinBarJoinText {
+  color: #ffffff;
+  font-size: 30rpx;
+  line-height: 100rpx;
+}

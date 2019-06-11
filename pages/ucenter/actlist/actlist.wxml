@@ -1,0 +1,25 @@
+<!--pages/ucenter/actlist/actlist.wxml-->
+
+<view class='home-view'>
+
+  <!--显示顶部tab栏-->
+  <scroll-view class='type-view' scroll-x='true'>
+    <view class='type-view-item {{currentTab == 0? "selected" : ""}}' data-current='0' bindtap='viewSwitch'>
+      <view class='txt'>我参与的</view>
+    </view>
+    <view class='type-view-item {{currentTab == 1? "selected" : ""}}' data-current='1' bindtap='viewSwitch'>
+      <view class='txt'>我发起的</view>
+    </view>
+    <view class='type-view-item {{currentTab == 2? "selected" : ""}}' data-current='2' bindtap='viewSwitch'>
+      <view class='txt'>我认领的</view>
+    </view>
+  </scroll-view>
+
+  <!--活动为空时-->
+  <view wx:if='{{activityNum == 0}}'>
+    <view class='no-data'>
+      <image class='no-data-image' src='/images/home_index_nodata.png'></image>
+      <text class='no-data-text'>还没有任何数据呢</text>
+    </view>
+  </view>
+</view>
