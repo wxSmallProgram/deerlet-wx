@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.7.0",
 	"appid": "wx4d9c7a7d9e8c7494",
-	"projectname": "%E5%B0%8F%E9%B9%BF%E7%94%9F%E6%B4%BB",
+	"projectname": "deerlet-wx",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

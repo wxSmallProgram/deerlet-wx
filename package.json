@@ -1,0 +1,23 @@
+{
+  "name": "deerlet-wx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxSmallProgram/deerlet-wx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wxSmallProgram/deerlet-wx/issues"
+  },
+  "homepage": "https://github.com/wxSmallProgram/deerlet-wx#readme",
+  "dependencies": {
+    "vant-weapp": "^0.5.14"
+  }
+}
