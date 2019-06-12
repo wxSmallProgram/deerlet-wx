@@ -1,12 +1,7 @@
 <!--pages/home/index/index.wxml-->
 
 <view class='home-view'>
-  <van-tabs active="{{ active }}" bind:change="onChange">
-    <van-tab title="全部活动"></van-tab>
-    <van-tab title="线上活动"></van-tab>
-    <van-tab title="线下活动"></van-tab>
-    <van-tab title="单身交友"></van-tab>
-  </van-tabs>
+
   <!--显示顶部tab栏-->
   <scroll-view class='type-view' scroll-x='true'>
     <view class='type-view-item {{currentTab == 0? "selected" : ""}}' data-current='0' bindtap='viewSwitch'>

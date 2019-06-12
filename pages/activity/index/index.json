@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "活动发布",
+  "usingComponents": {
+    "van-field": "../../../lib/vant-webapp/dist/field/index",
+    "van-cell-group": "../../../lib/vant-webapp/dist/cell-group/index",
+    "van-cell": "../../../lib/vant-webapp/dist/cell/index"
+  }
 }

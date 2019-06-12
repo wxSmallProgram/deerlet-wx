@@ -3,138 +3,31 @@
 <view class="lineBase"></view>
 
 <view class='pPoster'>
-  <image class='pPoster-image' src='https://deerlife-1254209752.cos.ap-guangzhou.myqcloud.com/activity_index_poster.png'></image>
+  <image class='pPoster-image' bindtap="uploadActivityBrand" src='https://deerlife-1254209752.cos.ap-guangzhou.myqcloud.com/activity_index_poster.png'></image>
 </view>
 
-<view class='baseInfo'>
+<view class="activity-form-box">
+  <van-cell-group>
+    <van-field label="主题：" title-width="45px" value="{{ activity_form.title }}" placeholder="请输入主题名称" bind:change="onChange"/>
+  </van-cell-group>
+  <van-cell title="开始时间" is-link value="请设置" />
+  <van-cell title="结束时间" is-link value="请设置" />
+  <van-cell title="地点" is-link value="请设置" />
+  <van-cell title="人数" is-link value="请设置" />
+  <van-cell title="费用" is-link value="请设置" />
+  <van-field label="描述：" autosize type="textarea" title-width="45px" value="{{ activity_form.title }}" placeholder="请输入活动详细描述" bind:change="onChange"/>
 
-  <view class='contentList'>
-    <view class='pTitle'>
-      <text class='pTitleLabel'>主题：</text>
-      <view class='fixInput'>
-        <input class='pTitleInput' maxlength='30' placeholder='活动标题' placeholder-style='color:#c2cdd9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      </view>
-    </view>
-  </view>
-
-  <view class='contentList'>
-
-    <view class='pTitle'>
-      <view class='pTitleLabel'>时间：</view>
-      <picker class='pDateItem' mode='multiSelector'>
-        <text class='pickDateItemNull' wx:if='1'>开始时间</text>
-      </picker>
-      <view class='pTitleLabel'>至</view>
-    </view>
-
-    <view class='pTitle'>
-      <picker class='pDateItem' mode='multiSelector' style='margin-left:100rpx;'>
-        <text class='pickDateItemNull' wx:if='1'>结束时间</text>
-      </picker>
-    </view>
-
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel'>地点：</view>
-      <input class='pAreaContent' placeholder='请选择' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel'>人数：</view>
-      <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle noBorderBottom'>
-      <view class='pTitleLabel'>费用：</view>
-        <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
+  <van-cell-group title="选填信息">
+    <van-cell title="活动组织者：" is-link value="请设置" />
+    <van-cell title="报名截止时间：" is-link value="请设置" />
+    <van-cell title="最低成行人数：" is-link value="请设置" />
+    <van-cell title="退款设置：" is-link value="请设置" />
+    <van-cell title="人员构成：" is-link value="请设置" />
+    <van-cell title="年龄要求：" is-link value="请设置" />
+    <van-cell title="最低学历：" is-link value="请设置" />
+  </van-cell-group>
 </view>
-
 <view style="height:10rpx"></view>
-
-<!--活动详细描述-->
-<view class='actBrief'>
-
-</view>
-
-<!--选填信息-->
-<view class='separate'></view>
-
-<view class='user_row'>
-  <view class='user_row_left'>选填信息</view>
-</view>
-
-<view class='baseInfo'>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel2'>活动组织者：</view>
-      <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel2'>报名截止时间：</view>
-      <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel2'>最低成行人数：</view>
-      <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel2'>退款设置：</view>
-      <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel2'>人员构成：</view>
-      <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-  <view class='contentList'>
-    <view class='pTitle'>
-      <view class='pTitleLabel2'>年龄要求：</view>
-      <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-  
-  <view class='contentList'>
-    <view class='pTitle noBorderBottom'>
-      <view class='pTitleLabel2'>最低学历：</view>
-        <input class='pAreaContent' placeholder='请设置' placeholderStyle='color:#C2CDD9;font-family: PingFangSC-Light, helvetica, "Heiti SC";'></input>
-      <image class='pArrowRight' src='/images/icon_black_arrow_right.png'></image>
-    </view>
-  </view>
-
-</view>
-
 <!--同意协议及活动发布-->
 <view class="pAccord">
   <view bindtap="agreeService">

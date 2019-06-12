@@ -104,7 +104,7 @@
 .actBrief {
   width: 100%;
   height:360rpx;
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 /* 选填信息 */

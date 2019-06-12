@@ -8,7 +8,12 @@ Page({
     currentTab: 0,  //当前被选中的tab页
     activityNum: 10, //当前分类下需显示的活动数量
   },
+  /**
+   * 顶部tab切换事件控制
+   */
+  onChange() {
 
+  },
   /**
    * 切换活动类型
    */
@@ -41,6 +46,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    wx.getSystemInfo({
+      success(res) {}
+    })
     console.log(wx.env)
     wx.getSetting({
       success(res) {
